@@ -27,7 +27,7 @@ public class Asteroid {
 
     public void recreate(){
         position.x = 1280 + (float)Math.random() * 1280;
-        position.y =(float)Math.random()*720;
+        position.y =(float)Math.random()*(720 - 64);
         speed = 2.0f + (float) Math.random()* 6.0f;
     }
 

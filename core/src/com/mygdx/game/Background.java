@@ -18,12 +18,12 @@ public class Background {
         }
 
         public void update(){
-           position.x -= speed;
-           if (position.x < -20) {
-               position.x = 1280;
-               position.y = (float) Math.random()*720;
-               speed = 1.0f + (float) Math.random() * 7.0f;
-           }
+            position.x -= speed;
+            if (position.x < -20) {
+                position.x = 1280;
+                position.y = (float) Math.random()*720;
+                speed = 1.0f + (float) Math.random() * 7.0f;
+            }
         }
     }
     private Texture texture;
