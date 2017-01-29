@@ -14,7 +14,7 @@ public class Background {
 
         Star(){
             position = new Vector2((float)Math.random() * 1280,(float)Math.random()*720);
-            speed = 5.0f;
+            speed = 2.0f + (float) Math.random()* 5.0f;
         }
 
         public void update(){
@@ -22,13 +22,14 @@ public class Background {
            if (position.x < -20) {
                position.x = 1280;
                position.y = (float) Math.random()*720;
+               speed = 1.0f + (float) Math.random() * 7.0f;
            }
         }
     }
     private Texture texture;
     private Texture textureStar;
     private Star[] stars;
-    private final int STARS_COUNT = 200;
+    private final int STARS_COUNT = 500;
 
     public Background(){
         texture = new Texture("bg.png");
